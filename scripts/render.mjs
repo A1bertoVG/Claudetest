@@ -41,12 +41,13 @@ if (args.preview) {
 
 const tmp = path.join(ROOT, 'output/parts'); fs.mkdirSync(tmp, { recursive: true });
 const probe = await openPage(); const DUR = await probe.evaluate('window.DURATION'); await probe.close();
-const N = Math.round(DUR * FPS);
+const F0 = args.from ? Math.round(+args.from * FPS) : 0, F1 = args.to ? Math.round(+args.to * FPS) : Math.round(DUR * FPS);
+const N = F1 - F0; const PREFIX = args.prefix || 'part';
 console.log(`duración ${DUR}s -> ${N} cuadros, ${WORKERS} workers`);
 const per = Math.ceil(N / WORKERS); let done = 0; const T0 = Date.now();
 await Promise.all([...Array(WORKERS).keys()].map(async w => {
-  const a = w * per, b = Math.min(N, a + per); const page = await openPage();
-  const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'mjpeg', '-i', '-', '-c:v', 'libx264', '-preset', 'medium', '-crf', '18', '-pix_fmt', 'yuv420p', path.join(tmp, `part${w}.mp4`)], { stdio: ['pipe', 'inherit', 'inherit'] });
+  const a = F0 + w * per, b = Math.min(F1, a + per); const page = await openPage();
+  const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'mjpeg', '-i', '-', '-c:v', 'libx264', '-preset', 'medium', '-crf', '18', '-pix_fmt', 'yuv420p', path.join(tmp, `${PREFIX}${w}.mp4`)], { stdio: ['pipe', 'inherit', 'inherit'] });
   for (let f = a; f < b; f++) {
     const url = await page.evaluate(t => window.frameJpeg(t, 0.93), f / FPS);
     if (!ff.stdin.write(Buffer.from(url.split(',')[1], 'base64'))) await new Promise(r => ff.stdin.once('drain', r));
@@ -54,6 +55,6 @@ await Promise.all([...Array(WORKERS).keys()].map(async w => {
   }
   ff.stdin.end(); await new Promise(r => ff.on('close', r)); await page.close();
 }));
-fs.writeFileSync(path.join(tmp, 'list.txt'), [...Array(WORKERS).keys()].map(w => `file 'part${w}.mp4'`).join('\n'));
+fs.writeFileSync(path.join(tmp, `${PREFIX}_list.txt`), [...Array(WORKERS).keys()].map(w => `file '${PREFIX}${w}.mp4'`).join('\n'));
 await browser.close(); server.close();
 console.log('listo en', ((Date.now() - T0) / 1000).toFixed(0), 's');

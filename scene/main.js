@@ -505,7 +505,7 @@ function sceneFrecuencia(t, lt, dur) {
   });
   const idx = picks[clamp(Math.floor((lt - tDos) / 0.3), 0, 2)];
   const tgt = dayCubes[lt < tDos ? 0 : idx].g.position;
-  calBrush.position.set(tgt.x + 0.2, tgt.y + 0.55 + Math.abs(Math.sin(t * 6)) * 0.18, 0.7); calBrush.rotation.set(0.3, -0.4, 0.25);
+  calBrush.position.set(tgt.x + 0.25, tgt.y - 0.42 - Math.abs(Math.sin(t * 6)) * 0.12, 0.75); calBrush.rotation.set(0.3, -0.4, 0.25);
   cam(V3(0.4, 2.2, 9.4 - lt * 0.12), V3(0, 1.95, 0), 40);
 }
 
@@ -737,8 +737,7 @@ function drawExtras(t, id) {
     const pb = project(V3(BA.before.x, 3.05, 0)), pa = project(V3(BA.after.x, 3.05, 0));
     pill(pb.x, pb.y, 'Antes', C.grafito, C.blanco, TEXT(42), easeOutBack(l2 / 0.4));
     pill(pa.x, pa.y, 'Después', C.azul, C.blanco, TEXT(42), easeOutBack((l2 - 0.25) / 0.4));
-    const pn = project(V3(BA.after.x, 0.05, 0.6));
-    namePlate(pn.x, pn.y + 40, 'Canela', easeOutBack((t - wt('resultado', 'canela')) / 0.45));
+    namePlate(pa.x, pa.y + 96, 'Canela', easeOutBack((t - wt('resultado', 'canela')) / 0.45));
   }
   if (id === 'cta') {
     // Promo: un sticker amarillo con texto grafito
