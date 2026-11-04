@@ -5,3 +5,5 @@ output/contact.jpg
 output/render.log
 *.onnx
 voices-*.bin
+mef/output/parts/
+mef/output/preview/
