@@ -1,0 +1,7 @@
+node_modules/
+output/parts/
+output/preview/
+output/contact.jpg
+output/render.log
+*.onnx
+voices-*.bin

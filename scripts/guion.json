@@ -1,0 +1,56 @@
+[
+ {
+  "id": "hook",
+  "scene": "hook",
+  "text": "¿Sabías que un simple nudo en el pelo de tu perrito puede lastimarlo todos los días?",
+  "caption": "¿Un simple NUDO puede lastimar a tu perrito?"
+ },
+ {
+  "id": "intro",
+  "scene": "intro",
+  "text": "Quédate hasta el final, y te enseño el truco que usan los peluqueros caninos para quitar nudos sin dolor.",
+  "caption": "Quédate hasta el final y te enseño el truco SIN DOLOR"
+ },
+ {
+  "id": "problema",
+  "scene": "problema",
+  "text": "Cuando el pelo no se peina, se enreda y forma nudos que se aprietan contra la piel. Cada vez que se mueve, el nudo jala.",
+  "caption": "Los nudos se aprietan contra la piel y JALAN"
+ },
+ {
+  "id": "dano",
+  "scene": "dano",
+  "text": "Eso le causa dolor, irritación, y atrapa humedad y suciedad, que pueden provocar heridas e infecciones escondidas.",
+  "caption": "Dolor · Irritación · Heridas ocultas"
+ },
+ {
+  "id": "solucion",
+  "scene": "solucion",
+  "text": "Por eso cepillarlo es salud, no solo estética. Quita el pelo muerto, reparte sus aceites naturales, y te ayuda a detectar pulgas o bultos a tiempo.",
+  "caption": "Cepillar = SALUD, no solo estética"
+ },
+ {
+  "id": "frecuencia",
+  "scene": "frecuencia",
+  "text": "Hazlo de dos a tres veces por semana, o a diario si tiene el pelo largo.",
+  "caption": "2 a 3 veces por semana · Diario si es pelo largo"
+ },
+ {
+  "id": "truco",
+  "scene": "truco",
+  "text": "Y aquí está el truco prometido: nunca jales el nudo. Sujeta el pelo cerca de la piel con tus dedos, aplica un poco de fécula de maíz, y desenreda desde la punta hacia la raíz, poco a poco.",
+  "caption": "EL TRUCO: sujeta en la raíz y desenreda desde la punta"
+ },
+ {
+  "id": "aviso",
+  "scene": "aviso",
+  "text": "Si el nudo está pegado a la piel, no uses tijeras: llévalo con un profesional.",
+  "caption": "¿Nudo pegado a la piel? NO uses tijeras"
+ },
+ {
+  "id": "cta",
+  "scene": "cta",
+  "text": "Guarda este video y compártelo con alguien que ame a su perrito.",
+  "caption": "Guárdalo y compártelo"
+ }
+]
