@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/A1bertoVG/Claudetest#readme",
   "dependencies": {
+    "@fontsource/fraunces": "^5.1.0",
     "@fontsource/fredoka": "^5.1.0",
+    "@fontsource/nunito": "^5.1.0",
     "three": "^0.170.0"
   }
 }

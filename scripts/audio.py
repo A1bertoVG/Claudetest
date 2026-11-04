@@ -86,44 +86,40 @@ def tension():  # tirón grave
     return np.sin(2 * np.pi * np.cumsum(f) / SR) * np.sin(np.pi * t / 0.5) * 0.5
 
 sfx = np.zeros(N)
-place(sfx, boom(), 0.0, 0.9)
-for sid in ORDER[1:]: place(sfx, whoosh(), RANGES[sid][0] - 0.3, 0.5)
-place(sfx, whoosh(), RANGES["truco"][0] + 1.5 - 0.3, 0.5)
-# gancho: latidos de dolor
-for k in range(4): place(sfx, tension(), 0.9 + k * 0.72, 0.35)
-place(sfx, chime(1318.5), RANGES["intro"][0] + 0.6, 0.35)
-# problema / daño: tirones
-tj = wt("problema", "jala") - 0.3
-for k in range(6):
-    t = tj + (np.pi / 2) / 5.2 + k * np.pi / 5.2
-    if t < RANGES["problema"][1]: place(sfx, tension(), t - 0.2, 0.55)
-for k, w in enumerate(["irritacion", "humedad", "suciedad", "infecciones"]): place(sfx, popfx(), wt("dano", w), 0.35)
-# solución: cepillado + nudos que desaparecen
-sd = 1.3; r0 = RANGES["solucion"][0]
-k = 0
-while r0 + k * sd < RANGES["solucion"][1] - 0.3: place(sfx, swish(), r0 + k * sd + 0.3, 0.55); k += 1
-for i in range(3): place(sfx, popfx(), r0 + sd * (i + 0.5), 0.5); place(sfx, chime(1046.5 * [1, 1.122, 1.26][i]), r0 + sd * (i + 0.5), 0.25)
-for w in ["quita", "reparte", "detectar"]: place(sfx, click(), wt("solucion", w), 0.4)
-# frecuencia
-for i in range(3): place(sfx, bell(880 * [1, 1.25, 1.5][i], 0.5), wt("frecuencia", "dos") + i * 0.35, 0.4)
-for i in range(7): place(sfx, popfx(), wt("frecuencia", "diario") - 0.1 + i * 0.09, 0.3)
-# truco: desbloqueo
-r0 = RANGES["truco"][0]
-place(sfx, click(), r0 + 0.2, 0.8); place(sfx, chime(1046.5), r0 + 0.5, 0.6); place(sfx, chime(1568), r0 + 0.75, 0.4)
-place(sfx, buzzer(), wt("truco", "nunca"), 0.6)
-for w in ["sujeta", "aplica", "desenreda"]: place(sfx, click(), wt("truco", w), 0.4)
-place(sfx, chime(1318.5), RANGES["truco"][1] - 1.2, 0.5)
-# aviso
-for k in range(int((wt("aviso", "llevalo") - RANGES["aviso"][0]) / (np.pi / 7))): place(sfx, snip(), RANGES["aviso"][0] + k * np.pi / 7, 0.35)
-place(sfx, buzzer(), wt("aviso", "no"), 0.5)
-place(sfx, chime(1046.5), wt("aviso", "llevalo"), 0.4)
-# cta
-place(sfx, popfx(), wt("cta", "guarda"), 0.6); place(sfx, popfx(), wt("cta", "compartelo"), 0.6)
+# Manual CANIS: sin efectos agresivos. Golpe suave al inicio, transiciones discretas.
+place(sfx, boom(), 0.0, 0.45)
+for sid in ORDER[1:]: place(sfx, whoosh(), RANGES[sid][0] - 0.3, 0.3)
+place(sfx, whoosh(), RANGES["resultado"][0] + 1.3 - 0.3, 0.3)
+for k in range(3): place(sfx, tension(), 0.9 + k * 0.9, 0.25)
+place(sfx, chime(1318.5), RANGES["intro"][0] + 0.5, 0.3)
+tj = wt("problema", "jalan") - 0.2
+for k in range(4):
+    t = tj + (np.pi / 2) / 4.2 + k * np.pi / 4.2
+    if t < RANGES["problema"][1]: place(sfx, tension(), t - 0.2, 0.45)
+for w in ["irritacion", "humedad", "suciedad", "heridas"]: place(sfx, popfx(), wt("dano", w), 0.3)
+for w in ["sujeta", "desenreda"]: place(sfx, click(), wt("truco", w), 0.4)
+r0 = RANGES["truco"][0]; ds = wt("truco", "desenreda") - 0.1
+sd = max(0.55, (RANGES["truco"][1] - r0 - 0.6 - (ds - r0)) / 4)
+for k in range(4): place(sfx, swish(), ds + k * sd, 0.5)
+place(sfx, chime(1318.5), RANGES["truco"][1] - 0.7, 0.35)
+for i in range(3): place(sfx, bell(880 * [1, 1.25, 1.5][i], 0.5), wt("frecuencia", "dos") + i * 0.3, 0.35)
+for k in range(int((wt("aviso", "dejalo") - RANGES["aviso"][0]) / (np.pi / 5))): place(sfx, snip(), RANGES["aviso"][0] + k * np.pi / 5, 0.3)
+place(sfx, popfx(), wt("aviso", "no"), 0.4)
+place(sfx, chime(1046.5), wt("aviso", "dejalo"), 0.35)
+sd = 1.25; r0 = RANGES["proceso"][0]; k = 0
+while r0 + k * sd < RANGES["proceso"][1] - 0.3: place(sfx, swish(), r0 + k * sd + 0.3, 0.5); k += 1
+for i in range(3): place(sfx, popfx(), r0 + sd * (i + 0.5), 0.4); place(sfx, chime(1046.5 * [1, 1.122, 1.26][i]), r0 + sd * (i + 0.5), 0.2)
+for w in ["jalar", "prisas", "estres"]: place(sfx, click(), wt("proceso", w), 0.35)
+r0 = RANGES["resultado"][0]
+place(sfx, click(), r0 + 0.1, 0.7); place(sfx, chime(1046.5), r0 + 0.4, 0.55); place(sfx, chime(1568), r0 + 0.65, 0.35)
+place(sfx, chime(1318.5), wt("resultado", "canela"), 0.3)
+place(sfx, popfx(), wt("cta", "agenda"), 0.55); place(sfx, popfx(), wt("cta", "escribenos"), 0.55)
+place(sfx, chime(1046.5), RANGES["cierre"][0] + 0.1, 0.35)
 
 # --- música: parte 1 tensa (pad menor), parte 2 alegre (ukelele pulsado)
 mus = np.zeros(N)
 nf = lambda m: 440 * 2 ** ((m - 69) / 12)
-happy_t = RANGES["solucion"][0]
+happy_t = RANGES["proceso"][0] - 0.3
 def pad(notes, d):
     n = int(d * SR); t = T(n); x = sum(np.sin(2 * np.pi * nf(m) * t + np.sin(2 * np.pi * 0.3 * t) * 0.5) for m in notes)
     a = np.minimum(1, t / 0.6) * np.minimum(1, (d - t) / 0.6); return x * a / len(notes)

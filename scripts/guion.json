@@ -1,56 +1,69 @@
 [
  {
   "id": "hook",
-  "scene": "hook",
-  "text": "¿Sabías que un simple nudo en el pelo de tu perrito puede lastimarlo todos los días?",
-  "caption": "¿Un simple NUDO puede lastimar a tu perrito?"
+  "text": "¿Tu perrito se queja cuando lo cepillas? A Canela le pasaba: tenía nudos que la lastimaban.",
+  "sub": "¿Tu perrito se queja cuando lo *cepillas*? A Canela le pasaba: tenía *nudos* que la lastimaban.",
+  "caption": "¿Se queja cuando lo *cepillas*?"
  },
  {
   "id": "intro",
-  "scene": "intro",
-  "text": "Quédate hasta el final, y te enseño el truco que usan los peluqueros caninos para quitar nudos sin dolor.",
-  "caption": "Quédate hasta el final y te enseño el truco SIN DOLOR"
+  "text": "Quédate hasta el final y mira cómo quedó después de su visita a Canis.",
+  "sub": "Quédate hasta el *final* y mira cómo quedó después de su visita a *CANIS*.",
+  "caption": "Quédate hasta el *final*"
  },
  {
   "id": "problema",
-  "scene": "problema",
-  "text": "Cuando el pelo no se peina, se enreda y forma nudos que se aprietan contra la piel. Cada vez que se mueve, el nudo jala.",
-  "caption": "Los nudos se aprietan contra la piel y JALAN"
+  "text": "Los nudos se aprietan contra la piel y jalan con cada movimiento.",
+  "sub": "Los nudos se *aprietan* contra la piel y *jalan* con cada movimiento.",
+  "caption": "Los nudos *jalan* la piel"
  },
  {
   "id": "dano",
-  "scene": "dano",
-  "text": "Eso le causa dolor, irritación, y atrapa humedad y suciedad, que pueden provocar heridas e infecciones escondidas.",
-  "caption": "Dolor · Irritación · Heridas ocultas"
- },
- {
-  "id": "solucion",
-  "scene": "solucion",
-  "text": "Por eso cepillarlo es salud, no solo estética. Quita el pelo muerto, reparte sus aceites naturales, y te ayuda a detectar pulgas o bultos a tiempo.",
-  "caption": "Cepillar = SALUD, no solo estética"
- },
- {
-  "id": "frecuencia",
-  "scene": "frecuencia",
-  "text": "Hazlo de dos a tres veces por semana, o a diario si tiene el pelo largo.",
-  "caption": "2 a 3 veces por semana · Diario si es pelo largo"
+  "text": "Eso causa dolor, irritación, y atrapa humedad y suciedad que pueden provocar heridas.",
+  "sub": "Eso causa *dolor*, *irritación*, y atrapa humedad y suciedad que pueden provocar *heridas*.",
+  "caption": "Dolor, irritación y *heridas*"
  },
  {
   "id": "truco",
-  "scene": "truco",
-  "text": "Y aquí está el truco prometido: nunca jales el nudo. Sujeta el pelo cerca de la piel con tus dedos, aplica un poco de fécula de maíz, y desenreda desde la punta hacia la raíz, poco a poco.",
-  "caption": "EL TRUCO: sujeta en la raíz y desenreda desde la punta"
+  "text": "Un truco para casa: sujeta el pelo cerca de la piel, y desenreda desde la punta hacia la raíz, poco a poco.",
+  "sub": "Un *truco* para casa: sujeta el pelo *cerca de la piel*, y desenreda desde la *punta* hacia la raíz, poco a poco.",
+  "caption": "Truco: de la *punta* a la raíz"
+ },
+ {
+  "id": "frecuencia",
+  "text": "Cepíllalo de dos a tres veces por semana.",
+  "sub": "Cepíllalo de *dos a tres* veces por semana.",
+  "caption": "*2 a 3* veces por semana"
  },
  {
   "id": "aviso",
-  "scene": "aviso",
-  "text": "Si el nudo está pegado a la piel, no uses tijeras: llévalo con un profesional.",
-  "caption": "¿Nudo pegado a la piel? NO uses tijeras"
+  "text": "Pero si el nudo ya está pegado a la piel, no uses tijeras. Déjalo en nuestras manos.",
+  "sub": "Pero si el nudo ya está *pegado* a la piel, *no uses tijeras*. Déjalo en nuestras *manos*.",
+  "caption": "¿Nudo pegado? *Sin* tijeras"
+ },
+ {
+  "id": "proceso",
+  "text": "En Canis la desenredamos con calma: sin jalar, sin prisas y sin estrés.",
+  "sub": "En *CANIS* la desenredamos con *calma*: sin jalar, sin prisas y sin estrés.",
+  "caption": "En CANIS, con *calma*"
+ },
+ {
+  "id": "resultado",
+  "text": "Y aquí está: Canela salió lista, peinada y tranquila.",
+  "sub": "Y aquí está: Canela salió *lista*, *peinada* y *tranquila*.",
+  "caption": "",
+  "pause": 1.3
  },
  {
   "id": "cta",
-  "scene": "cta",
-  "text": "Guarda este video y compártelo con alguien que ame a su perrito.",
-  "caption": "Guárdalo y compártelo"
+  "text": "Agenda la cita de tu perrito. Escríbenos por mensaje a arroba canis punto spa canino.",
+  "sub": "*Agenda* la cita de tu perrito. Escríbenos por mensaje a *@canis.spacanino*",
+  "caption": ""
+ },
+ {
+  "id": "cierre",
+  "text": "Porque cuando una mascota se siente bien, su familia también.",
+  "sub": "",
+  "caption": ""
  }
 ]

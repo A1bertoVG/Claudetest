@@ -14,8 +14,9 @@ for s in segs:
     a = a.astype(np.float32); a /= max(1e-6, np.abs(a).max()); a *= 0.9
     d = len(a)/SR
     timeline.append({**s, "start": round(t,3), "end": round(t+d,3)})
-    out += [a, np.zeros(int(GAP*SR), np.float32)]
-    t += d + GAP
+    gap = GAP + s.get("pause", 0)
+    out += [a, np.zeros(int(gap*SR), np.float32)]
+    t += d + gap
 out.append(np.zeros(int(1.2*SR), np.float32))
 audio = np.concatenate(out)
 sf.write("audio/voz.wav", audio, SR)
