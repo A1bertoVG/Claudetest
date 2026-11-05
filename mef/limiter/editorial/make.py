@@ -389,7 +389,7 @@ def sc_hook(img, t):
     k = ease(t / 1.8)
     cv = Cv(img, z=lerp(2.1, 1.0, k), cy=lerp(yv(CEIL) + 60, 960, k), oy=kick_env(t) * 6)
     bg(cv)
-    hits = wave(cv, t + 3, cy=CY, A=AMP, makeup=0.2, ceil=CEIL, lk=1.0, mark_thr=CEIL - 0.02)
+    hits = wave(cv, t + 6 * B, cy=CY, A=AMP, makeup=0.2, ceil=CEIL, lk=1.0, mark_thr=CEIL - 0.02)
     tc = wt("hook", "cristal")
     glass(cv, yv(CEIL), t, hits=hits, cracks=0.35 * ease((t - tc) / 0.4), label=False)
     caption(Cv(img), t, "El techo de *cristal*", y=330, size=96, t0=0.25)
@@ -712,6 +712,6 @@ if __name__ == "__main__":
         for k, _ in enumerate(pool.imap_unordered(job, range(n), chunksize=4)):
             if k % 150 == 0: print(f"{k}/{n}", flush=True)
     subprocess.run(["python3", f"{ROOT}/audio.py"], check=True)
-    subprocess.run(["ffmpeg", "-y", "-framerate", str(FPS), "-i", f"{fdir}/%05d.jpg", "-i", f"{ROOT}/output/mezcla.wav",
+    subprocess.run(["ffmpeg", "-y", "-framerate", str(FPS), "-i", f"{fdir}/%05d.jpg", "-i", "mef/editorial/output/mezcla_limiter.wav",
                     "-c:v", "libx264", "-preset", "slow", "-crf", "18", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k",
-                    "-shortest", "-movflags", "+faststart", f"{ROOT}/output/mef_limiter_editorial.mp4"], check=True)
+                    "-shortest", "-movflags", "+faststart", "mef/editorial/output/mef_limiter_editorial.mp4"], check=True)

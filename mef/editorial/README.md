@@ -14,3 +14,13 @@ npm install && pip install numpy pillow soundfile
 python3 mef/editorial/make.py --preview 1.6,20.5,36   # cuadros sueltos
 python3 mef/editorial/make.py                         # video completo (≈4 min con 4 núcleos)
 ```
+
+## Video #2 · "Compresor → Limiter: el techo de cristal" (59 s)
+
+**Video final:** [`output/mef_limiter_editorial.mp4`](output/mef_limiter_editorial.mp4) · guion: [`../limiter/editorial/guion.md`](../limiter/editorial/guion.md)
+Generador en `mef/limiter/editorial/` (voz y tiempos de `mef/limiter/`); el video y su mezcla se guardan en esta misma carpeta `output/`.
+
+```bash
+python3 mef/limiter/editorial/make.py --preview 19.5,30.2
+python3 mef/limiter/editorial/make.py
+```
