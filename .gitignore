@@ -5,3 +5,4 @@ output/contact.jpg
 output/render.log
 *.onnx
 voices-*.bin
+output/render*.log
