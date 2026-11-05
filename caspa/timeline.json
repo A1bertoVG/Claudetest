@@ -1,5 +1,5 @@
 {
- "duration": 57.79,
+ "duration": 59.8,
  "segments": [
   {
    "id": "hook",
@@ -7,88 +7,89 @@
    "sub": "¿Tu perro se *rasca* mucho? No siempre son *pulgas*.",
    "caption": "No siempre son *pulgas*",
    "start": 0.6,
-   "end": 3.331
+   "end": 3.224
   },
   {
    "id": "dato",
    "text": "Dato curioso: la piel de tu perro se renueva todo el tiempo. Cuando se reseca, esas células muertas se sueltan como caspa.",
    "sub": "*Dato curioso:* la piel de tu perro se renueva todo el tiempo. Cuando se reseca, esas células muertas se sueltan como *caspa*.",
    "caption": "*Dato* curioso",
-   "start": 3.781,
-   "end": 10.565
+   "start": 3.674,
+   "end": 10.33
   },
   {
    "id": "promesa",
-   "text": "Quédate hasta el final, que te cuento el error de baño que más la provoca.",
-   "sub": "Quédate hasta el *final*, que te cuento el *error* de baño que más la provoca.",
-   "caption": "El *error* más común, al final",
-   "start": 11.015,
-   "end": 14.599
+   "text": "Quédate hasta el final: te cuento el error de baño que más la provoca.",
+   "sub": "Quédate hasta el *final*: te cuento el *error* de baño que más la provoca.",
+   "caption": "Quédate hasta el *final*",
+   "start": 10.78,
+   "end": 14.236
   },
   {
    "id": "senales",
    "text": "Fíjate si tiene escamitas blancas en el lomo, el pelo opaco, o la piel reseca al tacto.",
    "sub": "Fíjate si tiene *escamitas blancas* en el lomo, el pelo *opaco*, o la piel *reseca* al tacto.",
    "caption": "Señales de *caspa*",
-   "start": 15.049,
-   "end": 20.041
+   "start": 14.686,
+   "end": 19.529
   },
   {
    "id": "causas",
-   "text": "Suele pasar por piel seca, por bañarlo muy poco, o por bañarlo de más.",
-   "sub": "Suele pasar por *piel seca*, por bañarlo *muy poco*, o por bañarlo *de más*.",
+   "text": "Suele pasar por piel seca, por bañarlo muy poco, o por un mal enjuague que le deja jabón en la piel.",
+   "sub": "Suele pasar por *piel seca*, por bañarlo *muy poco*, o por un *mal enjuague* que le deja *jabón* en la piel.",
    "caption": "¿Por qué aparece?",
-   "start": 20.491,
-   "end": 24.309
+   "start": 19.979,
+   "end": 25.12
   },
   {
    "id": "error",
    "text": "Y el error más común: usar tu propio shampoo. La piel del perro tiene otro pH, y el shampoo para personas se la reseca.",
    "sub": "Y el error más común: usar *tu propio shampoo*. La piel del perro tiene otro *pH*, y el shampoo para personas se la *reseca*.",
    "caption": "Error: usar *tu* shampoo",
-   "start": 24.759,
-   "end": 31.479
+   "start": 25.57,
+   "end": 32.098
   },
   {
    "id": "canis",
    "text": "Por eso en Canis lo bañamos con shampoo para su tipo de piel, lo enjuagamos a fondo, y lo secamos con calma.",
    "sub": "Por eso en *CANIS* lo bañamos con shampoo para *su tipo de piel*, lo enjuagamos *a fondo*, y lo secamos *con calma*.",
    "caption": "Un baño *a su medida*",
-   "start": 31.929,
-   "end": 37.796
+   "start": 32.548,
+   "end": 38.372
   },
   {
    "id": "resultado",
-   "text": "Así salió Bruno: limpio, con el pelo brillante, y mucho más tranquilo.",
-   "sub": "Así salió Bruno: *limpio*, con el pelo *brillante*, y mucho más *tranquilo*.",
+   "text": "Mira a Cindy: limpia, con el pelo brillante, y mucho más tranquila.",
+   "sub": "Mira a Cindy: *limpia*, con el pelo *brillante*, y mucho más *tranquila*.",
    "caption": "",
-   "pause": 0.8,
-   "start": 38.246,
-   "end": 41.915
+   "pause": 0.6,
+   "start": 38.822,
+   "end": 42.299
   },
   {
    "id": "aviso",
-   "text": "Si la comezón sigue, o ves heridas o zonas sin pelo, llévalo con su veterinario.",
-   "sub": "Si la comezón sigue, o ves *heridas* o *zonas sin pelo*, llévalo con su *veterinario*.",
-   "caption": "¿Sigue la comezón? *Veterinario*",
-   "start": 43.165,
-   "end": 47.496
+   "text": "Y si la comezón sigue, o ves heridas o zonas sin pelo, llévalo a revisar con Veterinaria Agrocentro.",
+   "sub": "Y si la comezón sigue, o ves *heridas* o *zonas sin pelo*, llévalo a revisar con *Veterinaria Agrocentro*.",
+   "caption": "¿Sigue la *comezón*?",
+   "pause": 1.1,
+   "start": 43.349,
+   "end": 48.917
   },
   {
    "id": "cta",
    "text": "Agenda su baño en Canis. Escríbenos por mensaje a arroba canis punto spa canino.",
    "sub": "*Agenda su baño* en CANIS. Escríbenos por mensaje a *@canis.spacanino*",
    "caption": "",
-   "start": 47.946,
-   "end": 52.511
+   "start": 50.467,
+   "end": 54.969
   },
   {
    "id": "cierre",
    "text": "Porque cuando una mascota se siente bien, su familia también.",
    "sub": "",
    "caption": "",
-   "start": 52.961,
-   "end": 56.14
+   "start": 55.419,
+   "end": 58.555
   }
  ]
 }

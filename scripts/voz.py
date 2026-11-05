@@ -12,7 +12,7 @@ LEAD, GAP = 0.6, 0.45
 out = [np.zeros(int(LEAD*SR), np.float32)]
 t = LEAD; timeline = []
 for s in segs:
-    a, sr = k.create(s["text"], voice="ef_dora", speed=1.08, lang="es")
+    a, sr = k.create(s["text"], voice="ef_dora", speed=float(__import__("os").environ.get("VOZ_SPEED", "1.08")), lang="es")
     assert sr == SR
     a = a.astype(np.float32); a /= max(1e-6, np.abs(a).max()); a *= 0.9
     d = len(a)/SR

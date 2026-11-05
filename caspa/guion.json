@@ -1,13 +1,70 @@
 [
- {"id":"hook", "text":"¿Tu perro se rasca mucho? No siempre son pulgas.", "sub":"¿Tu perro se *rasca* mucho? No siempre son *pulgas*.", "caption":"No siempre son *pulgas*"},
- {"id":"dato", "text":"Dato curioso: la piel de tu perro se renueva todo el tiempo. Cuando se reseca, esas células muertas se sueltan como caspa.", "sub":"*Dato curioso:* la piel de tu perro se renueva todo el tiempo. Cuando se reseca, esas células muertas se sueltan como *caspa*.", "caption":"*Dato* curioso"},
- {"id":"promesa", "text":"Quédate hasta el final, que te cuento el error de baño que más la provoca.", "sub":"Quédate hasta el *final*, que te cuento el *error* de baño que más la provoca.", "caption":"El *error* más común, al final"},
- {"id":"senales", "text":"Fíjate si tiene escamitas blancas en el lomo, el pelo opaco, o la piel reseca al tacto.", "sub":"Fíjate si tiene *escamitas blancas* en el lomo, el pelo *opaco*, o la piel *reseca* al tacto.", "caption":"Señales de *caspa*"},
- {"id":"causas", "text":"Suele pasar por piel seca, por bañarlo muy poco, o por bañarlo de más.", "sub":"Suele pasar por *piel seca*, por bañarlo *muy poco*, o por bañarlo *de más*.", "caption":"¿Por qué aparece?"},
- {"id":"error", "text":"Y el error más común: usar tu propio shampoo. La piel del perro tiene otro pH, y el shampoo para personas se la reseca.", "sub":"Y el error más común: usar *tu propio shampoo*. La piel del perro tiene otro *pH*, y el shampoo para personas se la *reseca*.", "caption":"Error: usar *tu* shampoo"},
- {"id":"canis", "text":"Por eso en Canis lo bañamos con shampoo para su tipo de piel, lo enjuagamos a fondo, y lo secamos con calma.", "sub":"Por eso en *CANIS* lo bañamos con shampoo para *su tipo de piel*, lo enjuagamos *a fondo*, y lo secamos *con calma*.", "caption":"Un baño *a su medida*"},
- {"id":"resultado", "text":"Así salió Bruno: limpio, con el pelo brillante, y mucho más tranquilo.", "sub":"Así salió Bruno: *limpio*, con el pelo *brillante*, y mucho más *tranquilo*.", "caption":"", "pause":0.8},
- {"id":"aviso", "text":"Si la comezón sigue, o ves heridas o zonas sin pelo, llévalo con su veterinario.", "sub":"Si la comezón sigue, o ves *heridas* o *zonas sin pelo*, llévalo con su *veterinario*.", "caption":"¿Sigue la comezón? *Veterinario*"},
- {"id":"cta", "text":"Agenda su baño en Canis. Escríbenos por mensaje a arroba canis punto spa canino.", "sub":"*Agenda su baño* en CANIS. Escríbenos por mensaje a *@canis.spacanino*", "caption":""},
- {"id":"cierre", "text":"Porque cuando una mascota se siente bien, su familia también.", "sub":"", "caption":""}
+ {
+  "id": "hook",
+  "text": "¿Tu perro se rasca mucho? No siempre son pulgas.",
+  "sub": "¿Tu perro se *rasca* mucho? No siempre son *pulgas*.",
+  "caption": "No siempre son *pulgas*"
+ },
+ {
+  "id": "dato",
+  "text": "Dato curioso: la piel de tu perro se renueva todo el tiempo. Cuando se reseca, esas células muertas se sueltan como caspa.",
+  "sub": "*Dato curioso:* la piel de tu perro se renueva todo el tiempo. Cuando se reseca, esas células muertas se sueltan como *caspa*.",
+  "caption": "*Dato* curioso"
+ },
+ {
+  "id": "promesa",
+  "text": "Quédate hasta el final: te cuento el error de baño que más la provoca.",
+  "sub": "Quédate hasta el *final*: te cuento el *error* de baño que más la provoca.",
+  "caption": "Quédate hasta el *final*"
+ },
+ {
+  "id": "senales",
+  "text": "Fíjate si tiene escamitas blancas en el lomo, el pelo opaco, o la piel reseca al tacto.",
+  "sub": "Fíjate si tiene *escamitas blancas* en el lomo, el pelo *opaco*, o la piel *reseca* al tacto.",
+  "caption": "Señales de *caspa*"
+ },
+ {
+  "id": "causas",
+  "text": "Suele pasar por piel seca, por bañarlo muy poco, o por un mal enjuague que le deja jabón en la piel.",
+  "sub": "Suele pasar por *piel seca*, por bañarlo *muy poco*, o por un *mal enjuague* que le deja *jabón* en la piel.",
+  "caption": "¿Por qué aparece?"
+ },
+ {
+  "id": "error",
+  "text": "Y el error más común: usar tu propio shampoo. La piel del perro tiene otro pH, y el shampoo para personas se la reseca.",
+  "sub": "Y el error más común: usar *tu propio shampoo*. La piel del perro tiene otro *pH*, y el shampoo para personas se la *reseca*.",
+  "caption": "Error: usar *tu* shampoo"
+ },
+ {
+  "id": "canis",
+  "text": "Por eso en Canis lo bañamos con shampoo para su tipo de piel, lo enjuagamos a fondo, y lo secamos con calma.",
+  "sub": "Por eso en *CANIS* lo bañamos con shampoo para *su tipo de piel*, lo enjuagamos *a fondo*, y lo secamos *con calma*.",
+  "caption": "Un baño *a su medida*"
+ },
+ {
+  "id": "resultado",
+  "text": "Mira a Cindy: limpia, con el pelo brillante, y mucho más tranquila.",
+  "sub": "Mira a Cindy: *limpia*, con el pelo *brillante*, y mucho más *tranquila*.",
+  "caption": "",
+  "pause": 0.6
+ },
+ {
+  "id": "aviso",
+  "text": "Y si la comezón sigue, o ves heridas o zonas sin pelo, llévalo a revisar con Veterinaria Agrocentro.",
+  "sub": "Y si la comezón sigue, o ves *heridas* o *zonas sin pelo*, llévalo a revisar con *Veterinaria Agrocentro*.",
+  "caption": "¿Sigue la *comezón*?",
+  "pause": 1.1
+ },
+ {
+  "id": "cta",
+  "text": "Agenda su baño en Canis. Escríbenos por mensaje a arroba canis punto spa canino.",
+  "sub": "*Agenda su baño* en CANIS. Escríbenos por mensaje a *@canis.spacanino*",
+  "caption": ""
+ },
+ {
+  "id": "cierre",
+  "text": "Porque cuando una mascota se siente bien, su familia también.",
+  "sub": "",
+  "caption": ""
+ }
 ]

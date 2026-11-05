@@ -1,0 +1,95 @@
+{
+ "duration": 59.8,
+ "segments": [
+  {
+   "id": "hook",
+   "text": "¿Tu perro se rasca mucho? No siempre son pulgas.",
+   "sub": "¿Tu perro se *rasca* mucho? No siempre son *pulgas*.",
+   "caption": "No siempre son *pulgas*",
+   "start": 0.6,
+   "end": 3.224
+  },
+  {
+   "id": "dato",
+   "text": "Dato curioso: la piel de tu perro se renueva todo el tiempo. Cuando se reseca, esas células muertas se sueltan como caspa.",
+   "sub": "*Dato curioso:* la piel de tu perro se renueva todo el tiempo. Cuando se reseca, esas células muertas se sueltan como *caspa*.",
+   "caption": "*Dato* curioso",
+   "start": 3.674,
+   "end": 10.33
+  },
+  {
+   "id": "promesa",
+   "text": "Quédate hasta el final: te cuento el error de baño que más la provoca.",
+   "sub": "Quédate hasta el *final*: te cuento el *error* de baño que más la provoca.",
+   "caption": "Quédate hasta el *final*",
+   "start": 10.78,
+   "end": 14.236
+  },
+  {
+   "id": "senales",
+   "text": "Fíjate si tiene escamitas blancas en el lomo, el pelo opaco, o la piel reseca al tacto.",
+   "sub": "Fíjate si tiene *escamitas blancas* en el lomo, el pelo *opaco*, o la piel *reseca* al tacto.",
+   "caption": "Señales de *caspa*",
+   "start": 14.686,
+   "end": 19.529
+  },
+  {
+   "id": "causas",
+   "text": "Suele pasar por piel seca, por bañarlo muy poco, o por un mal enjuague que le deja jabón en la piel.",
+   "sub": "Suele pasar por *piel seca*, por bañarlo *muy poco*, o por un *mal enjuague* que le deja *jabón* en la piel.",
+   "caption": "¿Por qué aparece?",
+   "start": 19.979,
+   "end": 25.12
+  },
+  {
+   "id": "error",
+   "text": "Y el error más común: usar tu propio shampoo. La piel del perro tiene otro pH, y el shampoo para personas se la reseca.",
+   "sub": "Y el error más común: usar *tu propio shampoo*. La piel del perro tiene otro *pH*, y el shampoo para personas se la *reseca*.",
+   "caption": "Error: usar *tu* shampoo",
+   "start": 25.57,
+   "end": 32.098
+  },
+  {
+   "id": "canis",
+   "text": "Por eso en Canis lo bañamos con shampoo para su tipo de piel, lo enjuagamos a fondo, y lo secamos con calma.",
+   "sub": "Por eso en *CANIS* lo bañamos con shampoo para *su tipo de piel*, lo enjuagamos *a fondo*, y lo secamos *con calma*.",
+   "caption": "Un baño *a su medida*",
+   "start": 32.548,
+   "end": 38.372
+  },
+  {
+   "id": "resultado",
+   "text": "Mira a Cindy: limpia, con el pelo brillante, y mucho más tranquila.",
+   "sub": "Mira a Cindy: *limpia*, con el pelo *brillante*, y mucho más *tranquila*.",
+   "caption": "",
+   "pause": 0.6,
+   "start": 38.822,
+   "end": 42.299
+  },
+  {
+   "id": "aviso",
+   "text": "Y si la comezón sigue, o ves heridas o zonas sin pelo, llévalo a revisar con Veterinaria Agrocentro.",
+   "sub": "Y si la comezón sigue, o ves *heridas* o *zonas sin pelo*, llévalo a revisar con *Veterinaria Agrocentro*.",
+   "caption": "¿Sigue la *comezón*?",
+   "pause": 1.1,
+   "start": 43.349,
+   "end": 48.917
+  },
+  {
+   "id": "cta",
+   "text": "Agenda su baño en Canis. Escríbenos por mensaje a arroba canis punto spa canino.",
+   "sub": "*Agenda su baño* en CANIS. Escríbenos por mensaje a *@canis.spacanino*",
+   "caption": "",
+   "start": 50.467,
+   "end": 54.969
+  },
+  {
+   "id": "cierre",
+   "text": "Porque cuando una mascota se siente bien, su familia también.",
+   "sub": "",
+   "caption": "",
+   "start": 55.419,
+   "end": 58.555
+  }
+ ]
+}

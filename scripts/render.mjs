@@ -24,7 +24,7 @@ async function openPage() {
   const page = await browser.newPage({ viewport: { width: 1080, height: 1920 } });
   page.on('console', m => { if (m.type() === 'error' || m.type() === 'warning') console.log('[page]', m.text()); });
   page.on('pageerror', e => console.log('[pageerror]', e.message));
-  await page.goto(`http://localhost:${PORT}/scene/index.html`);
+  await page.goto(`http://localhost:${PORT}/${args.page || 'scene/index.html'}`);
   await page.waitForFunction('window.READY === true', null, { timeout: 120000 });
   return page;
 }
