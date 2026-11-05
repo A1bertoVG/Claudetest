@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>MEF Estudio – Compresor y limiter (minimal)</title>
+<style>
+  @font-face { font-family: "Anton"; font-weight: 400; src: url("/node_modules/@fontsource/anton/files/anton-latin-400-normal.woff2") format("woff2"); }
+  @font-face { font-family: "Grotesk"; font-weight: 700; src: url("/node_modules/@fontsource/space-grotesk/files/space-grotesk-latin-700-normal.woff2") format("woff2"); }
+  @font-face { font-family: "Grotesk"; font-weight: 500; src: url("/node_modules/@fontsource/space-grotesk/files/space-grotesk-latin-500-normal.woff2") format("woff2"); }
+  html, body { margin: 0; background: #000; overflow: hidden; }
+  canvas { display: block; }
+</style>
+<script type="importmap" data-unused="1">
+{ "imports": {
+    "three": "/node_modules/three/build/three.module.js",
+    "three/addons/": "/node_modules/three/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<canvas id="out" width="1080" height="1920"></canvas>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
