@@ -1,0 +1,13 @@
+[
+ {"id":"hook","text":"Esta onda nunca va a romper este cristal. Y justo por eso, tu máster suena fuerte.","sub":"Esta onda *nunca* va a romper este *cristal*. Y justo por eso, tu máster suena *fuerte*.","pause":0.1},
+ {"id":"promesa","text":"Sigue el viaje de tu track: primero el compresor, luego el límiter. Y al final, el error más común en másters de tecno.","sub":"Sigue el viaje de tu track: primero el *compresor*, luego el *limiter*. Y al final, el *error* más común en másters de techno."},
+ {"id":"cruda","text":"Tu track entra así: picos que saltan por todos lados.","sub":"Tu track entra así: *picos* que saltan por todos lados."},
+ {"id":"threshold","text":"El tréchold es esta línea. Lo que queda abajo, pasa intacto. Lo que la cruza, el compresor lo trabaja.","sub":"El *threshold* es esta *línea*. Lo que queda abajo, pasa *intacto*. Lo que la cruza, el compresor lo *trabaja*."},
+ {"id":"ratio","text":"El réichio dice cuánto. Con cuatro a uno, si un pico se pasa cuatro decibeles, solo sale uno.","sub":"El *ratio* dice cuánto. Con *4 a 1*, si un pico se pasa *4 dB*, solo sale *1*."},
+ {"id":"limiter","text":"Después viene el límiter: un techo de cristal. Réichio infinito. Ningún pico lo atraviesa.","sub":"Después viene el *limiter*: un *techo de cristal*. Ratio *infinito*. Ningún pico lo *atraviesa*."},
+ {"id":"revelacion","text":"Por eso puedes subir todo sin clipiar: el compresor controla, el límiter protege.","sub":"Por eso puedes *subir todo* sin clipear: el compresor *controla*, el limiter *protege*."},
+ {"id":"error","text":"El error: dejarle todo el trabajo al límiter. Si lo aprietas de más, el cristal se empaña, y tu kick pierde el golpe.","sub":"El *error*: dejarle *todo* el trabajo al limiter. Si lo aprietas de más, el cristal se *empaña*, y tu kick pierde el *golpe*."},
+ {"id":"tip","text":"Que trabaje de uno a tres decibeles, máximo.","sub":"Que trabaje de *1 a 3 dB*, máximo.","pause":0.15},
+ {"id":"marca","text":"Encontrar ese equilibrio es lo que hacemos en Mef Estudio: mezcla y máster, para que tu track pegue fuerte, sin perder el golpe.","sub":"Encontrar ese *equilibrio* es lo que hacemos en *MEF Estudio*: *mezcla y máster*, para que tu track pegue fuerte, sin perder el golpe."},
+ {"id":"cta","text":"Guarda este video para tu próxima sesión, y síguenos para más trucos de mezcla.","sub":"*Guarda* este video para tu próxima sesión, y *síguenos* para más trucos de mezcla."}
+]

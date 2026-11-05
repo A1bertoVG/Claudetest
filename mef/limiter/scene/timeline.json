@@ -1,0 +1,84 @@
+{
+ "duration": 59.377,
+ "segments": [
+  {
+   "id": "hook",
+   "text": "Esta onda nunca va a romper este cristal. Y justo por eso, tu máster suena fuerte.",
+   "sub": "Esta onda *nunca* va a romper este *cristal*. Y justo por eso, tu máster suena *fuerte*.",
+   "pause": 0.1,
+   "start": 0.12,
+   "end": 4.765
+  },
+  {
+   "id": "promesa",
+   "text": "Sigue el viaje de tu track: primero el compresor, luego el límiter. Y al final, el error más común en másters de tecno.",
+   "sub": "Sigue el viaje de tu track: primero el *compresor*, luego el *limiter*. Y al final, el *error* más común en másters de techno.",
+   "start": 5.185,
+   "end": 11.253
+  },
+  {
+   "id": "cruda",
+   "text": "Tu track entra así: picos que saltan por todos lados.",
+   "sub": "Tu track entra así: *picos* que saltan por todos lados.",
+   "start": 11.573,
+   "end": 14.638
+  },
+  {
+   "id": "threshold",
+   "text": "El tréchold es esta línea. Lo que queda abajo, pasa intacto. Lo que la cruza, el compresor lo trabaja.",
+   "sub": "El *threshold* es esta *línea*. Lo que queda abajo, pasa *intacto*. Lo que la cruza, el compresor lo *trabaja*.",
+   "start": 14.958,
+   "end": 20.527
+  },
+  {
+   "id": "ratio",
+   "text": "El réichio dice cuánto. Con cuatro a uno, si un pico se pasa cuatro decibeles, solo sale uno.",
+   "sub": "El *ratio* dice cuánto. Con *4 a 1*, si un pico se pasa *4 dB*, solo sale *1*.",
+   "start": 20.847,
+   "end": 25.841
+  },
+  {
+   "id": "limiter",
+   "text": "Después viene el límiter: un techo de cristal. Réichio infinito. Ningún pico lo atraviesa.",
+   "sub": "Después viene el *limiter*: un *techo de cristal*. Ratio *infinito*. Ningún pico lo *atraviesa*.",
+   "start": 26.161,
+   "end": 31.031
+  },
+  {
+   "id": "revelacion",
+   "text": "Por eso puedes subir todo sin clipiar: el compresor controla, el límiter protege.",
+   "sub": "Por eso puedes *subir todo* sin clipear: el compresor *controla*, el limiter *protege*.",
+   "start": 31.351,
+   "end": 35.945
+  },
+  {
+   "id": "error",
+   "text": "El error: dejarle todo el trabajo al límiter. Si lo aprietas de más, el cristal se empaña, y tu kick pierde el golpe.",
+   "sub": "El *error*: dejarle *todo* el trabajo al limiter. Si lo aprietas de más, el cristal se *empaña*, y tu kick pierde el *golpe*.",
+   "start": 36.265,
+   "end": 42.485
+  },
+  {
+   "id": "tip",
+   "text": "Que trabaje de uno a tres decibeles, máximo.",
+   "sub": "Que trabaje de *1 a 3 dB*, máximo.",
+   "pause": 0.15,
+   "start": 42.805,
+   "end": 45.38
+  },
+  {
+   "id": "marca",
+   "text": "Encontrar ese equilibrio es lo que hacemos en Mef Estudio: mezcla y máster, para que tu track pegue fuerte, sin perder el golpe.",
+   "sub": "Encontrar ese *equilibrio* es lo que hacemos en *MEF Estudio*: *mezcla y máster*, para que tu track pegue fuerte, sin perder el golpe.",
+   "start": 45.85,
+   "end": 52.37
+  },
+  {
+   "id": "cta",
+   "text": "Guarda este video para tu próxima sesión, y síguenos para más trucos de mezcla.",
+   "sub": "*Guarda* este video para tu próxima sesión, y *síguenos* para más trucos de mezcla.",
+   "start": 52.69,
+   "end": 57.057
+  }
+ ]
+}
