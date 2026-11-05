@@ -13,7 +13,7 @@ TL = json.load(open("mef/limiter/scene/timeline.json"))
 SEG = {s["id"]: s for s in TL["segments"]}; ORDER = [s["id"] for s in TL["segments"]]
 DUR = TL["duration"]
 NM = "node_modules/@fontsource"
-def font(path, size): return ImageFont.truetype(path, size)
+def font(path, size): return ImageFont.truetype(path, max(4, int(size)))
 ANTON = lambda s: font(f"{NM}/anton/files/anton-latin-400-normal.woff2", s)
 GROT = lambda s: font(f"{NM}/space-grotesk/files/space-grotesk-latin-700-normal.woff2", s)
 HAND = lambda s: font(f"{NM}/caveat/files/caveat-latin-700-normal.woff2", s)
@@ -378,6 +378,42 @@ def frame(t):
     return np.clip(a, 0, 255).astype(np.uint8)
 
 # --------------------------------------------------------------------------- main (por ahora: cuadros de prueba)
-if __name__ == "__main__":
+if __name__ == "__main__" and "--video" not in sys.argv:
     ts = [float(x) for x in sys.argv[sys.argv.index("--preview") + 1].split(",")] if "--preview" in sys.argv else [2.0, 18.6, 24.6, 28.8, 39.0, 49.5]
     for t in ts: Image.fromarray(frame(t)).save(f"{ROOT}/output/prueba_{t:05.2f}.jpg", quality=90)
+
+# --------------------------------------------------------------------------- sonido + video completo
+def audio():
+    """Base: la mezcla del video #2 (voz + techno 130 BPM con compresor/limiter reales).
+    Encima: efectos estilo brain rot sincronizados con cada sello/golpe."""
+    SR = 48000; base, sr = sf.read("mef/limiter/minimal/audio/mezcla.wav"); assert sr == SR
+    N = len(base); fx = np.zeros(N); T = lambda n: np.arange(n) / SR; rng = np.random.default_rng(5)
+    def place(x, t, g=1.0):
+        i = int(t * SR); j = min(N, i + len(x))
+        if 0 <= i < N: fx[i:j] += x[: j - i] * g
+    def lp(x, a): k = np.exp(-np.arange(int(5 / a)) * a); return np.convolve(x, k / k.sum())[: len(x)]
+    def boom(): n = int(1.0 * SR); t = T(n); f = 40 + 90 * np.exp(-t / 0.06); return np.tanh(3 * np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t / 0.45)) * 0.8
+    def buzz(): n = int(0.45 * SR); t = T(n); return (np.sign(np.sin(2 * np.pi * 110 * t)) + np.sign(np.sin(2 * np.pi * 113 * t))) * 0.22 * np.exp(-t / 0.3)
+    def scratch(): n = int(0.5 * SR); t = T(n); f = 300 + 900 * np.abs(np.sin(t * 22)); return lp(rng.standard_normal(n), 0.3) * np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t / 0.3) * 1.1
+    def whip(): n = int(0.18 * SR); t = T(n); nz = rng.standard_normal(n); return (nz - lp(nz, 0.1)) * np.sin(np.pi * t / t[-1]) ** 2 * 0.45
+    def ding(): n = int(0.9 * SR); t = T(n); return (np.sin(2 * np.pi * 1318 * t) + 0.5 * np.sin(2 * np.pi * 2637 * t)) * np.exp(-t / 0.35) * 0.3
+    def glass(): n = int(0.6 * SR); t = T(n); return sum(np.sin(2 * np.pi * f * t + f) * np.exp(-t / (0.2 * 2000 / f)) for f in (2100, 3300, 4700, 6200)) * 0.12
+    SFX = {"boom": boom(), "buzz": buzz(), "scratch": scratch(), "whip": whip(), "ding": ding(), "glass": glass(), "drop": boom()}
+    for th, (f, kind) in HITS.items(): place(SFX[kind], th, 0.8)
+    W_ = whip()
+    for sid in ORDER[1:]: place(W_, RANGES[sid][0] - 0.05, 0.45)
+    mix = base[:, 0] + fx * 0.5
+    mix = np.tanh(mix * 1.05) / np.tanh(1.05); mix /= max(1, np.abs(mix).max() / 0.97)
+    sf.write(f"{ROOT}/build_mezcla.wav", np.stack([mix, mix], 1).astype(np.float32), SR)
+
+def render():
+    audio(); nf = int(DUR * FPS)
+    ff = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
+                           "-i", f"{ROOT}/build_mezcla.wav", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p",
+                           "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", f"{ROOT}/output/mef_compresor_limiter_rot.mp4"], stdin=subprocess.PIPE)
+    for i in range(nf):
+        ff.stdin.write(frame(i / FPS).tobytes())
+        if i % 300 == 0: print(f"{i}/{nf}", flush=True)
+    ff.stdin.close(); ff.wait(); print("listo")
+
+if __name__ == "__main__" and "--video" in sys.argv: render()
