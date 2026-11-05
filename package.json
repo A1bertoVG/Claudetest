@@ -19,6 +19,7 @@
   "homepage": "https://github.com/A1bertoVG/Claudetest#readme",
   "dependencies": {
     "@fontsource/anton": "^5.3.0",
+    "@fontsource/caveat": "^5.1.0",
     "@fontsource/fraunces": "^5.1.0",
     "@fontsource/fredoka": "^5.1.0",
     "@fontsource/nunito": "^5.1.0",
