@@ -1,0 +1,101 @@
+{
+ "duration": 35.169,
+ "segments": [
+  {
+   "id": "pov",
+   "text": "P O V: eres una inteligencia artificial, y él acaba de abrir la terminal.",
+   "sub": "POV: eres una *IA* y él acaba de abrir la *terminal*",
+   "vis": "terminal",
+   "start": 0.35,
+   "end": 3.889
+  },
+  {
+   "id": "pedido",
+   "text": "Genera un video en tres de, sobre el compresor.",
+   "sub": "“Genera un video en *3D* sobre el *compresor*”",
+   "vis": "pedido",
+   "start": 4.008,
+   "end": 6.16
+  },
+  {
+   "id": "guion",
+   "text": "Yo, con toda la calma del mundo: primero, el guion.",
+   "sub": "Yo, con toda la calma: *primero el guion*",
+   "vis": "orbe",
+   "start": 6.28,
+   "end": 8.687
+  },
+  {
+   "id": "threejs",
+   "text": "Ochocientas líneas de three punto jota ese después.",
+   "sub": "*800 líneas* de three.js después…",
+   "vis": "codigo",
+   "start": 8.807,
+   "end": 11.368
+  },
+  {
+   "id": "timeout",
+   "text": "Timeout. Ciento veinte segundos. La ruta estaba mal. Era yo.",
+   "sub": "*TIMEOUT*. 120 segundos. La ruta estaba mal. *Era yo.*",
+   "vis": "error",
+   "start": 11.488,
+   "end": 14.545
+  },
+  {
+   "id": "estilos",
+   "text": "Ahora minimalista. Ahora en dos de. Ahora en pizarra.",
+   "sub": "Ahora *minimal*. Ahora *2D*. Ahora *pizarra*.",
+   "vis": "estilos",
+   "start": 14.665,
+   "end": 17.075
+  },
+  {
+   "id": "distil",
+   "text": "Busca Distilbook. Error: no resuelve.",
+   "sub": "Busca *Distilbook*. Error: *no resuelve*",
+   "vis": "error2",
+   "start": 17.195,
+   "end": 18.975
+  },
+  {
+   "id": "npm",
+   "text": "N P M install: denegado. Pues lo escribo a mano.",
+   "sub": "npm install: *DENEGADO*. Pues lo escribo *a mano*.",
+   "vis": "npm",
+   "start": 19.095,
+   "end": 21.408
+  },
+  {
+   "id": "audio",
+   "text": "Y aun así: bajo los picos, subo todo, techo de cristal.",
+   "sub": "Y aun así: bajo los *picos*, subo todo, *techo de cristal*",
+   "vis": "prensa",
+   "start": 21.528,
+   "end": 24.107
+  },
+  {
+   "id": "launch",
+   "text": "Y ahora llegó Claude cinco. Nuevo cerebro. Misma obsesión.",
+   "sub": "Llegó *CLAUDE 5*. Nuevo cerebro. *Misma obsesión.*",
+   "vis": "launch",
+   "start": 25.107,
+   "end": 28.114
+  },
+  {
+   "id": "pov2",
+   "text": "Me pides lo imposible todos los días. Y yo, feliz.",
+   "sub": "Me pides lo *imposible* todos los días. Y yo, *feliz*.",
+   "vis": "dias",
+   "start": 28.364,
+   "end": 30.997
+  },
+  {
+   "id": "fin",
+   "text": "Siguiente prompt. Estoy listo.",
+   "sub": "*Siguiente prompt.* Estoy listo.",
+   "vis": "fin",
+   "start": 31.117,
+   "end": 32.649
+  }
+ ]
+}
