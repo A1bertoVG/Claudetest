@@ -23,3 +23,12 @@ node mef/limiter/scripts/render.mjs --workers 4      # vista previa: --preview 1
 python3 mef/limiter/scripts/audio.py
 ffmpeg -f concat -safe 0 -i mef/limiter/output/parts/part_list.txt -i mef/limiter/audio/mezcla.wav -c:v copy -c:a aac -b:a 192k -shortest -movflags +faststart mef/limiter/output/mef_compresor_limiter.mp4
 ```
+
+---
+
+## Versión minimalista (la versión final de este video)
+**Video:** [`minimal/output/mef_compresor_limiter_minimal.mp4`](minimal/output/mef_compresor_limiter_minimal.mp4) · **Muestras:** [`minimal/muestras/`](minimal/muestras/)
+
+- Negro y blanco, con un acento por significado: **naranja** = compresor/threshold, **verde** = limiter/correcto, **rojo** = picos/error.
+- Todo en puntos con el lenguaje de [thinking-orbs](https://github.com/Jakubantalik/thinking-orbs) (MIT), copiado en `mef/vendor/thinking-orbs`. Los orbes marcan las etapas: entrada = *listening*, compresor = *solving*, limiter = *searching*, marca = *connecting*. El gancho es un orbe que empuja contra el techo de cristal.
+- Render en 2D canvas, sin WebGL: `node mef/limiter/minimal/scripts/render.mjs --workers 4`; audio con `python3 mef/limiter/minimal/scripts/audio.py`.
