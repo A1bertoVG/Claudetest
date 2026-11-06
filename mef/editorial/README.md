@@ -24,3 +24,14 @@ Generador en `mef/limiter/editorial/` (voz y tiempos de `mef/limiter/`); el vide
 python3 mef/limiter/editorial/make.py --preview 19.5,30.2
 python3 mef/limiter/editorial/make.py
 ```
+
+## Video #3 · "Compresión paralela: 5 tips" (62 s)
+
+**Video final:** [`output/mef_paralela_editorial.mp4`](output/mef_paralela_editorial.mp4) · guion: [`../paralela/guion.md`](../paralela/guion.md)
+Generador en `mef/paralela/` (voz Kokoro `em_alex` con `scripts/voz.py`); el video y su mezcla (`output/mezcla_paralela.wav`) se guardan en esta carpeta.
+
+```bash
+python3 mef/paralela/scripts/voz.py MODEL_DIR   # voz + timeline
+python3 mef/paralela/make.py --preview 2,22.8,45.5
+python3 mef/paralela/make.py
+```
