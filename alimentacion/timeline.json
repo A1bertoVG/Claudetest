@@ -1,5 +1,5 @@
 {
- "duration": 57.692,
+ "duration": 59.4,
  "segments": [
   {
    "id": "hook",
@@ -7,79 +7,80 @@
    "sub": "¿Sabías que el *pelo* de tu perro dice mucho de lo que *come*?",
    "caption": "Su pelo dice lo que *come*",
    "start": 0.6,
-   "end": 3.373
+   "end": 3.352
   },
   {
    "id": "dato",
    "text": "Dato curioso: su pelo está hecho casi todo de proteína. Por eso, una buena parte de lo que come se va a su piel y a su pelaje.",
    "sub": "*Dato curioso:* su pelo está hecho casi todo de *proteína*. Por eso, una buena parte de lo que come se va a su *piel* y a su *pelaje*.",
    "caption": "*Dato* curioso",
-   "start": 3.823,
-   "end": 10.543
+   "start": 3.802,
+   "end": 10.522
   },
   {
    "id": "promesa",
    "text": "Quédate hasta el final: te digo cómo cambiarle el alimento sin que le caiga mal.",
    "sub": "Quédate hasta el *final*: te digo cómo cambiarle el alimento *sin que le caiga mal*.",
    "caption": "Quédate hasta el *final*",
-   "start": 10.993,
-   "end": 15.153
+   "start": 10.972,
+   "end": 15.132
   },
   {
    "id": "senales",
    "text": "Si su pelo se ve opaco, se le cae de más, o tiene la piel reseca, a veces el problema empieza en el plato.",
    "sub": "Si su pelo se ve *opaco*, se le *cae de más*, o tiene la *piel reseca*, a veces el problema empieza en el *plato*.",
    "caption": "Empieza en el *plato*",
-   "start": 15.603,
-   "end": 21.171
+   "start": 15.582,
+   "end": 21.107
   },
   {
    "id": "nutrientes",
    "text": "Una buena alimentación le da proteína de calidad, omega tres y seis, zinc y vitaminas, que mantienen su piel hidratada y su pelo brillante.",
    "sub": "Una buena alimentación le da *proteína de calidad*, *omega 3 y 6*, *zinc* y *vitaminas*, que mantienen su piel hidratada y su pelo *brillante*.",
    "caption": "Lo que su piel *necesita*",
-   "start": 21.621,
-   "end": 29.152
+   "start": 21.557,
+   "end": 29.067
   },
   {
    "id": "canis",
-   "text": "Por eso en Canis, además de bañarlo, te ayudamos a elegir su alimento: tenemos Pro Plan, Birback, Royal Canin, Nupec y Excellent.",
-   "sub": "Por eso en *CANIS*, además de bañarlo, te ayudamos a *elegir su alimento*: tenemos Pro Plan, Birback, Royal Canin, Nupec y Excellent.",
+   "text": "Por eso en Canis, además de bañarlo, te ayudamos a elegir su alimento: tenemos Pro Plan, Virbac, Royal Canin, Nupec y Excellent.",
+   "sub": "Por eso en *CANIS*, además de bañarlo, te ayudamos a *elegir su alimento*: tenemos Pro Plan, Virbac, Royal Canin, Nupec y Excellent.",
    "caption": "Su alimento, en *CANIS*",
-   "start": 29.602,
-   "end": 36.791
+   "start": 29.517,
+   "end": 36.706
   },
   {
-   "id": "criterio",
-   "text": "El ideal depende de su edad, su tamaño y su tipo de piel.",
-   "sub": "El ideal depende de su *edad*, su *tamaño* y su *tipo de piel*.",
-   "caption": "El *ideal* para él",
-   "start": 37.241,
-   "end": 40.313
+   "id": "vet",
+   "text": "Y si tiene alguna alergia, contamos con los médicos de Veterinaria Agrocentro para guiarte en su cuidado.",
+   "sub": "Y si tiene alguna *alergia*, contamos con los médicos de *Veterinaria Agrocentro* para guiarte en su cuidado.",
+   "caption": "¿Tiene *alergias*?",
+   "pause": 0.15,
+   "start": 37.156,
+   "end": 42.639
   },
   {
    "id": "truco",
    "text": "Y el truco prometido: cambia su alimento poco a poco, en unos siete días, mezclando cada vez más del nuevo con el anterior.",
    "sub": "Y el *truco* prometido: cambia su alimento *poco a poco*, en unos *siete días*, mezclando cada vez más del nuevo con el anterior.",
    "caption": "El cambio, en *7 días*",
-   "start": 40.763,
-   "end": 47.441
+   "start": 43.239,
+   "end": 49.895
   },
   {
    "id": "cta",
    "text": "Pregúntanos por el ideal para tu perro. Escríbenos a arroba canis punto spa canino.",
    "sub": "*Pregúntanos* por el ideal para tu perro. Escríbenos a *@canis.spacanino*",
    "caption": "",
-   "start": 47.891,
-   "end": 52.435
+   "start": 50.345,
+   "end": 54.889
   },
   {
    "id": "cierre",
    "text": "Porque cuando una mascota se siente bien, su familia también.",
    "sub": "",
    "caption": "",
-   "start": 52.885,
-   "end": 56.042
+   "start": 55.339,
+   "end": 58.496
   }
  ]
 }
