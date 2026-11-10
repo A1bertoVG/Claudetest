@@ -35,3 +35,14 @@ python3 mef/paralela/scripts/voz.py MODEL_DIR   # voz + timeline
 python3 mef/paralela/make.py --preview 2,22.8,45.5
 python3 mef/paralela/make.py
 ```
+
+## Video #4 · "Rango dinámico" (84 s)
+
+**Video final:** [`output/mef_rango_editorial.mp4`](output/mef_rango_editorial.mp4) · guion: [`../rango/guion.md`](../rango/guion.md)
+Generador en `mef/rango/` (voz Kokoro `em_alex` con `scripts/voz.py`); mezcla en `output/mezcla_rango.wav`.
+
+```bash
+python3 mef/rango/scripts/voz.py MODEL_DIR
+python3 mef/rango/make.py --preview 3,37.8,66.2
+python3 mef/rango/make.py
+```
