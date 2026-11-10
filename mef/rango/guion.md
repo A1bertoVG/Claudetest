@@ -1,0 +1,26 @@
+# MEF Estudio · Video 2D #4 "Rango dinámico" (≈63 s, 9:16) — GUION PARA APROBACIÓN
+
+**Público:** productores de techno · **Objetivo:** que nos manden su track (clientes de mezcla y máster), que guarden el video y sigan a @mef.estudios
+**Estructura:** Hook → Introducción (qué se llevan) → Cuerpo 1 → Cuerpo 2 (lo que no sabían) → Bucle abierto → Cuerpo 3 → Bucle abierto → Cuerpo 4 (el número) → Marca + CTA (igual que los videos anteriores, con invitación a mandar su track).
+**Estética:** la misma 2D editorial de los videos #1–#3 (grafito cálido, marfil, arcilla #D97757, cielo, serif Fraunces, grano de papel).
+**Elemento visual fijo:** dos líneas horizontales sobre la onda. **PICO** va en arcilla y **LOUDNESS** (el promedio) va en cielo. Entre las dos hay una llave que dice **rango dinámico**: cuando se abre hay golpe y cuando se cierra el track queda aplastado.
+
+| Tiempo aprox. | Bloque | Voz en off | Visual 2D | Texto en pantalla |
+|---|---|---|---|---|
+| 0–4 s | **HOOK** | "Tu track suena enorme en tu estudio… y en Spotify suena más chico que todos los demás. ¿Por qué?" | Desde el cuadro 1: tu onda gigante y densa a la izquierda, y a la derecha un reproductor de streaming que la encoge de golpe mientras otro track a su lado se ve más vivo. | **¿Por qué suena más *chico*?** |
+| 4–9 s | **INTRODUCCIÓN (qué se llevan)** | "La respuesta es el rango dinámico. Quédate y te llevas el número exacto que tienes que revisar antes de mandar tu máster." | Aparecen las dos líneas (PICO / LOUDNESS) y la llave del rango. Píldora fija con barra de progreso. | **Rango *dinámico*** · píldora **El número para tu máster → al final** |
+| 9–17 s | **CUERPO 1 · Qué es** | "El rango dinámico es la distancia entre tus picos y tu volumen promedio. Los picos son el golpe del kick. El promedio es el cuerpo. Esa distancia es lo que hace que algo pegue." | La onda late a 130 BPM. La línea PICO sigue los kicks y la de LOUDNESS el promedio; la llave se abre y se cierra con cada golpe. | **Pico − promedio = *golpe*** |
+| 17–27 s | **CUERPO 2 · Lo que no sabías** | "Lo que casi nadie te dice: Spotify y YouTube bajan todo al mismo volumen, más o menos a menos catorce LUFS. Si aplastaste tu máster para sonar fuerte, te lo bajan igual… pero ya sin picos. Y el track con dinámica, al mismo volumen, se oye más grande." | Dos tracks entran a una "máquina" de streaming con un fader en −14 LUFS. El aplastado (bloque plano) baja mucho y queda chato; el dinámico baja poco y conserva sus picos. Al final quedan lado a lado: **mismo volumen, más golpe**. | **Streaming: *−14 LUFS* para todos** |
+| 27–29 s | **BUCLE ABIERTO 1** | "Pero eso no es lo único que el rango dinámico decide en tu track…" | La cámara se aleja hasta ver el track completo, con un signo de pregunta que late. | **Pero eso *no es todo*…** |
+| 29–38 s | **CUERPO 3 · El drop** | "También decide cuánto explota tu drop. El drop pega por contraste: si el break está igual de fuerte, no hay explosión. Deja el break de tres a seis decibeles más abajo, y el drop se siente gigante." | Vista del track completo en bloques: intro, break, drop. Primero el break está tan alto como el drop y el drop no destaca. Luego el break baja de −3 a −6 dB y el drop "explota" con un destello arcilla. | **Break *−3 a −6 dB*** · el drop pega por *contraste* |
+| 38–40 s | **BUCLE ABIERTO 2** | "Y ahora sí, el número que te prometí…" | La píldora de progreso se llena y se abre. | **El número…** |
+| 40–50 s | **CUERPO 4 · El número (PLR)** | "Mide el PLR: la diferencia entre tu pico y tu loudness. Hay medidores gratis. En el drop, si baja de seis decibeles, ya estás matando el kick. Busca ocho o más, y deja que el golpe respire." | Medidor PLR grande con zonas: rojo < 6 dB ("aplastado") y verde ≥ 8 dB ("respira"). La aguja va del rojo al verde y la llave del rango se abre. | **PLR en el drop: *8 dB o más*** |
+| 50–57 s | **MARCA (orgánica, ~80 %)** | "Encontrar ese balance entre fuerte y vivo es lo que hacemos en MEF Estudio: mezcla y máster para que tu track pegue en el club y en Spotify. Mándanos tu track por mensaje." | Entramos al estudio 2D de siempre: la onda sana en pantalla, monitores que laten y se enciende el letrero **MEF ESTUDIO · mezcla · máster**. Aparece una burbuja de mensaje: "Mándanos tu track". | **Mándanos tu *track*** |
+| 57–63 s | **CTA** | "Guarda este video para tu próxima sesión, y síguenos para más trucos de mezcla." | Se marca Guardar y se pulsa Seguir. Cierra con la placa MEF ESTUDIO y @mef.estudios. | **Guárdalo** · @mef.estudios |
+
+## Notas de producción
+- 1080×1920, 30 fps, en Python (PIL + numpy) con render en ffmpeg. El video final se guarda en `mef/editorial/output/` con los otros tres.
+- Voz nueva con el mismo TTS masculino (Kokoro `em_alex`). Los tiempos son aproximados y se ajustan a la voz real.
+- **Audio que se oye:** en el cuerpo 2 se escucha el mismo loop aplastado y dinámico, los dos normalizados al mismo volumen, para que se note cuál pega más. En el cuerpo 3 se oye el break alto contra el break abajo antes del drop.
+- La marca no aparece (ni logo ni nombre) antes del segundo ~50 (~80 %).
+- **Números usados:** streaming ≈ −14 LUFS (Spotify y YouTube). Break 3–6 dB abajo y PLR ≥ 8 dB en el drop son puntos de partida prácticos, no reglas fijas; la voz lo dice como "busca".
