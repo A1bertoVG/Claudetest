@@ -46,3 +46,14 @@ python3 mef/rango/scripts/voz.py MODEL_DIR
 python3 mef/rango/make.py --preview 3,37.8,66.2
 python3 mef/rango/make.py
 ```
+
+## Video #5 · "Arpegios cinemáticos" (67 s)
+
+**Video final:** [`output/mef_arpegios_editorial.mp4`](output/mef_arpegios_editorial.mp4) · guion: [`../arpegios/guion.md`](../arpegios/guion.md)
+Generador en `mef/arpegios/` (voz Kokoro `em_alex` con `scripts/voz.py`); mezcla estéreo en `output/mezcla_arpegios.wav`.
+
+```bash
+python3 mef/arpegios/scripts/voz.py MODEL_DIR
+python3 mef/arpegios/make.py --preview 3,16.5,47.5
+python3 mef/arpegios/make.py
+```

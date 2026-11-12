@@ -501,7 +501,7 @@ def roll(cv, t, x0=70, x1=1010, y0=560, y1=1210, lo=52, hi=82, ph=600, bars=1.5,
     if pad > 0:
         for s in range(first - first % 16, last + 16, 16):
             xa, xb = max(x0, ph + (s - s_now) * sw), min(x1, ph + (s + 16 - s_now) * sw)
-            if xb <= xa: continue
+            if xb <= xa + 6: continue
             c = CHORDS[(s // 16) % 4]
             cv.rect(xa + 2, ky(c[2] + 0.6) - 6, xb - 2, ky(c[0] - 0.6) + 6, fill=SKY + (int(55 * pad),), r=10)
     # nubes de reverb (detrás de las notas)
@@ -579,7 +579,7 @@ def sc_intro(img, t):
     cv = Cv(img); bg(cv)
     boxes(cv, t, 570, 0, t_show=wt("intro", "cuatro"))
     roll(cv, t, y0=700, y1=1230, dry=True)
-    ui = Cv(img); caption(ui, t, "4 tips + *el secreto*", y=360, size=86, t0=t0 + 0.1); pill_progress(ui, t)
+    ui = Cv(img); caption(ui, t, "4 tips + *el secreto*", y=430, size=80, t0=t0 + 0.1); pill_progress(ui, t)
 
 def sc_t1(img, t):
     t0 = RANGES["t1"][0]
