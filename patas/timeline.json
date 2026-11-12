@@ -1,0 +1,77 @@
+{
+ "duration": 58.501,
+ "segments": [
+  {
+   "id": "hook",
+   "text": "Si tu perro se lame las patas todo el tiempo, puede que no sea solo una costumbre.",
+   "sub": "Si tu perro se *lame las patas* todo el tiempo, puede que *no sea solo una costumbre*.",
+   "caption": "¿Se lame las *patas*?",
+   "start": 0.6,
+   "end": 4.867
+  },
+  {
+   "id": "dato",
+   "text": "Dato curioso: muchas patitas huelen a palomitas. Es normal, por las bacterias y levaduras que viven ahí. Pero si el olor es fuerte y se lame mucho, algo está pasando.",
+   "sub": "*Dato curioso:* muchas patitas huelen a *palomitas*. Es normal, por las bacterias y levaduras que viven ahí. Pero si el olor es *fuerte* y se lame mucho, *algo está pasando*.",
+   "caption": "*Dato* curioso",
+   "start": 5.317,
+   "end": 14.639
+  },
+  {
+   "id": "promesa",
+   "text": "Quédate hasta el final: te dejo el hábito de dos minutos que más ayuda.",
+   "sub": "Quédate hasta el *final*: te dejo el *hábito de dos minutos* que más ayuda.",
+   "caption": "Quédate hasta el *final*",
+   "start": 15.089,
+   "end": 18.801
+  },
+  {
+   "id": "causas",
+   "text": "Lo más común es humedad entre los dedos, pelo largo entre las almohadillas que atrapa tierra, piel reseca, alergias, o incluso aburrimiento.",
+   "sub": "Lo más común es *humedad* entre los dedos, *pelo largo* entre las almohadillas que atrapa tierra, *piel reseca*, *alergias*, o incluso *aburrimiento*.",
+   "caption": "¿Por qué se *lame*?",
+   "start": 19.251,
+   "end": 26.59
+  },
+  {
+   "id": "canis",
+   "text": "Por eso en Canis cuidamos sus patitas en cada baño: recortamos el pelo entre las almohadillas, limpiamos, secamos a fondo, y cortamos sus uñas.",
+   "sub": "Por eso en *CANIS* cuidamos sus patitas en cada baño: *recortamos* el pelo entre las almohadillas, *limpiamos*, *secamos a fondo*, y *cortamos sus uñas*.",
+   "caption": "Patitas cuidadas en *CANIS*",
+   "start": 27.04,
+   "end": 35.189
+  },
+  {
+   "id": "vet",
+   "text": "Y si notas enrojecimiento, hinchazón, mal olor, o que cojea, los médicos de Veterinaria Agrocentro te ayudan a revisarlo.",
+   "sub": "Y si notas *enrojecimiento*, *hinchazón*, *mal olor*, o que *cojea*, los médicos de *Veterinaria Agrocentro* te ayudan a revisarlo.",
+   "caption": "¿Rojo o hinchado? *Veterinario*",
+   "start": 35.639,
+   "end": 42.53
+  },
+  {
+   "id": "truco",
+   "text": "Y el hábito prometido: después de cada paseo, limpia sus patas y sécalas bien entre los dedos.",
+   "sub": "Y el *hábito* prometido: después de cada paseo, *limpia sus patas* y *sécalas bien entre los dedos*.",
+   "caption": "El hábito de *2 minutos*",
+   "start": 42.98,
+   "end": 48.1
+  },
+  {
+   "id": "cta",
+   "text": "Agenda su baño con cuidado de patitas. Escríbenos a arroba canis punto spa canino.",
+   "sub": "*Agenda su baño* con cuidado de patitas. Escríbenos a *@canis.spacanino*",
+   "caption": "",
+   "start": 48.55,
+   "end": 53.243
+  },
+  {
+   "id": "cierre",
+   "text": "Porque cuando una mascota se siente bien, su familia también.",
+   "sub": "",
+   "caption": "",
+   "start": 53.693,
+   "end": 56.851
+  }
+ ]
+}
