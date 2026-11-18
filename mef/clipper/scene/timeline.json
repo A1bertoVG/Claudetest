@@ -1,0 +1,77 @@
+{
+ "duration": 69.407,
+ "segments": [
+  {
+   "id": "hook",
+   "text": "Hay una herramienta que te da más volumen que el límiter, y casi nadie la usa bien.",
+   "sub": "Hay una herramienta que te da *más volumen* que el limiter, y casi nadie la usa *bien*.",
+   "pause": 0.1,
+   "start": 0.12,
+   "end": 4.307
+  },
+  {
+   "id": "intro",
+   "text": "Se llama clíper. Quédate, y te digo dónde ponerlo, cuánto apretarlo, y el ajuste que separa un clip limpio de uno que suena barato.",
+   "sub": "Se llama *clipper*. Quédate, y te digo *dónde* ponerlo, *cuánto* apretarlo, y el *ajuste* que separa un clip limpio de uno que suena *barato*.",
+   "start": 4.727,
+   "end": 11.895
+  },
+  {
+   "id": "que",
+   "text": "El límiter baja el volumen poco a poco. El clíper no: corta la punta del pico al instante. Y como el golpe del kick dura milisegundos, el oído casi no nota el corte.",
+   "sub": "El limiter *baja* el volumen poco a poco. El clipper no: *corta* la punta del pico *al instante*. Y como el golpe del kick dura *milisegundos*, el oído casi no nota el corte.",
+   "start": 12.215,
+   "end": 21.084
+  },
+  {
+   "id": "porque",
+   "text": "Si recortas de uno a dos decibeles de esas puntas, ganas espacio. El límiter trabaja menos, ya no bombea, y tu track sube de volumen sin perder el golpe.",
+   "sub": "Si recortas de *1 a 2 dB* de esas puntas, ganas *espacio*. El limiter trabaja *menos*, ya no bombea, y tu track *sube de volumen* sin perder el golpe.",
+   "start": 21.404,
+   "end": 29.867
+  },
+  {
+   "id": "bucle1",
+   "text": "Pero si lo pones en el lugar equivocado, suena horrible.",
+   "sub": "Pero si lo pones en el lugar *equivocado*, suena *horrible*…",
+   "start": 30.187,
+   "end": 33.032
+  },
+  {
+   "id": "donde",
+   "text": "Úsalo en el bus de batería, o antes del límiter del máster. Nunca en sonidos largos como bajos o pads: ahí el corte se oye como distorsión. Y empieza con soft clip: redondea la punta, y suena más cálido.",
+   "sub": "Úsalo en el *bus de batería*, o antes del limiter del *máster*. *Nunca* en sonidos largos como bajos o pads: ahí el corte se oye como *distorsión*. Y empieza con *soft clip*: redondea la punta, y suena más *cálido*.",
+   "start": 33.352,
+   "end": 44.666
+  },
+  {
+   "id": "bucle2",
+   "text": "Y ahora, el ajuste que casi nadie activa.",
+   "sub": "Y ahora, el *ajuste* que casi nadie activa…",
+   "pause": 0.1,
+   "start": 44.986,
+   "end": 47.308
+  },
+  {
+   "id": "secreto",
+   "text": "El óver sámpling. Sin él, el clíper crea frecuencias falsas que suenan ásperas y digitales. Actívalo a cuatro equis o más, y el clip se vuelve casi invisible.",
+   "sub": "El *oversampling*. Sin él, el clipper crea *frecuencias falsas* que suenan ásperas y digitales. Actívalo a *4x o más*, y el clip se vuelve casi *invisible*.",
+   "start": 47.728,
+   "end": 56.544
+  },
+  {
+   "id": "marca",
+   "text": "En Mef Estudio te ayudamos a llevar tu track al siguiente nivel: producción, mezcla y máster. Escríbenos.",
+   "sub": "En *MEF Estudio* te ayudamos a llevar tu track al *siguiente nivel*: *producción*, *mezcla* y *máster*. *Escríbenos*.",
+   "start": 56.864,
+   "end": 62.4
+  },
+  {
+   "id": "cta",
+   "text": "Guarda este video para tu próxima sesión, y síguenos para más trucos de mezcla.",
+   "sub": "*Guarda* este video para tu próxima sesión, y *síguenos* para más trucos de mezcla.",
+   "start": 62.72,
+   "end": 67.087
+  }
+ ]
+}
