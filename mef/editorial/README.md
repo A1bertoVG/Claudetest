@@ -57,3 +57,14 @@ python3 mef/arpegios/scripts/voz.py MODEL_DIR
 python3 mef/arpegios/make.py --preview 3,16.5,47.5
 python3 mef/arpegios/make.py
 ```
+
+## Video #6 · "El clipper" (69 s)
+
+**Video final:** [`output/mef_clipper_editorial.mp4`](output/mef_clipper_editorial.mp4) · guion: [`../clipper/guion.md`](../clipper/guion.md)
+Generador en `mef/clipper/` (voz Kokoro `em_alex` con `scripts/voz.py`); mezcla en `output/mezcla_clipper.wav` (clipper real hard/soft y demo de aliasing 1x vs oversampling 4x).
+
+```bash
+python3 mef/clipper/scripts/voz.py MODEL_DIR
+python3 mef/clipper/make.py --preview 2.5,16.5,51.8
+python3 mef/clipper/make.py
+```
